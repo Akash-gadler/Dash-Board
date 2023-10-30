@@ -1,0 +1,57 @@
+<template>
+    <template   for:each={collection}  for:item="curent" >
+      
+
+
+      <!-- <div class="slds-box slds-p-around_none slds-m-top_x-small slds-m-bottom_medium slds-m-horizontal_none" style="overflow:hidden" key={curent.Name}>
+          <lightning-layout multiple-rows>
+            <lightning-layout-item size="5" small-device-size="6" medium-device-size="2" large-device-size="1" padding="around-small">
+                
+                <lightning-avatar style="margin-top: 3%" size="large"  variant="circle" src="https://www.lightningdesignsystem.com/assets/images/avatar2.jpg" initials="AW" fallback-icon-name="standard:person_account" alternative-text="Amy Weaver" class="slds-m-right_small"></lightning-avatar>
+  
+                  <div style="display: flex;flex-direction:column">  
+                  <div class="n2">{curent.Name}  </div>
+                   <div class="n4">{curent.EmpID}</div>
+                   <div class="n3">{curent.Role}</div>
+                   </div>
+             </lightning-layout-item>
+            </lightning-layout>
+       
+    </div> -->
+    
+    <div style="justify-content: end;
+    padding:1%;
+    background-color: rgb(116 116 116 / 20%);
+    padding-right:3%;
+    display: flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    grid-gap:2em;
+    border-radius: 15px;" key={curent.Name}>
+    
+    <lightning-avatar style="margin-top: 3%" size="large"  variant="circle" src="https://www.lightningdesignsystem.com/assets/images/avatar2.jpg" initials="AW" fallback-icon-name="standard:person_account" alternative-text="Amy Weaver" class="slds-m-right_small"></lightning-avatar>
+    <!-- <div style="margin-top: 3%;background-color: #65CAE4" class="profileTrigger branding-user-profile bgimg slds-avatar slds-avatar_profile-image-medium circular forceEntityIcon" data-aura-rendered-by="3:544;a" data-aura-class="forceEntityIcon"><span data-aura-rendered-by="6:544;a" class="uiImage" data-aura-class="uiImage"><img data-aura-rendered-by="4:544;a" class="icon noicon" alt="User" title="User"></span></div>  -->
+       <div style="display: flex;flex-direction:column">  
+        <div class="n2">{curent.Name}  </div>
+      <div class="n4">{curent.EmpID}</div>
+      <div class="n3">{curent.Role}</div>
+    </div>
+      
+    </div> 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+ </template>
+
+   
+</template>

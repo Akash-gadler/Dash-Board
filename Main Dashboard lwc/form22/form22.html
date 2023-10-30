@@ -1,0 +1,46 @@
+<template>
+    
+<div class="disp">
+    
+   <h1>Hello {us.data} <lightning-icon icon-name="utility:user" style="color:white;" alternative-text="Account" title="Account"></lightning-icon> </h1> 
+   <!-- <h3>{us1.data}</h3> -->
+   <img src={url} alt="User Image" height="150px" width="150px"/>
+   <h2>{us2.data}</h2>
+
+
+
+
+<div style="padding-top:5%;color:white;">
+    
+
+ <lightning-accordion class="example-accordion"
+                         onsectiontoggle={handleToggleSection}
+                         active-section-name="A" style="padding: 2%;
+    background-color: #ffffff6e;
+    border-radius: 15px;" >
+        <lightning-accordion-section name="A" style="color:white !important;" label="Your Team">
+           
+         
+           <c-p2c-Child2 class="card" collection={name2}></c-p2c-Child2>
+        </lightning-accordion-section>
+
+        <lightning-accordion-section name="B" label="Task">
+            <c-task-Child2 task2={task}></c-task-Child2>
+        
+        </lightning-accordion-section>
+
+        <lightning-accordion-section name="C" label="Approval Pending">
+        
+            <p>The section height expands to fit your content.</p>
+        </lightning-accordion-section>
+    </lightning-accordion>
+
+
+</div>
+
+
+</div>
+
+
+
+</template>

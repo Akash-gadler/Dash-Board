@@ -1,0 +1,15 @@
+<template>
+     <div class="slds-p-around_medium lgc-bg">
+   <template for:each={task2} for:item="t1">
+       <div class="slds-has-dividers_bottom-space" key={t1.TID}>
+            
+            <h1 class="slds-text-heading_medium slds-m-bottom_medium"> {t1.TaskType} </h1>
+           
+            <ul  class="slds-has-dividers_bottom-space" key={t1.TaskList.TaskName} >
+                <li class="slds-item" >{t1.TaskList.TaskName}</li>
+            </ul>
+         
+            </div>
+   </template>
+   </div>
+</template>

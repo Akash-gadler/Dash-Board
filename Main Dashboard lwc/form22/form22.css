@@ -1,0 +1,59 @@
+.disp{
+background: #de6161;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2657eb, #de6161) !important;  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2657eb, #de6161) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+color:white;
+padding: 5%;
+
+}
+.card{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    grid-gap: 2em;
+	    overflow: scroll;
+   
+    overflow-y: hidden;
+	 overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+h1{
+	font-size: 350%;
+	font-family: 'Signika', sans-serif;
+}
+h2{
+	font-size: 150%;
+	font-family: 'Signika', sans-serif;
+}
+/* .slds-vertical-tabs{
+	background-color: transparent !important;
+}
+.slds-vertical-tabs__nav{
+background-color: #c3c3c34a !important;
+   
+    border: none !important;
+}
+.slds-vertical-tabs__nav-item
+{
+	border: none !important;
+}
+.slds-show
+{
+background-color: #c3c3c34a !important;
+box-shadow: 2px 2px 2px black;
+border: none !important;
+} */
+/* ul{
+	background-color: #c3c3c34a !important;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+.slds-vertical-tabs
+{
+	border: none !important;
+} */
+.slds-button_reset{
+	color: white !important;
+}
